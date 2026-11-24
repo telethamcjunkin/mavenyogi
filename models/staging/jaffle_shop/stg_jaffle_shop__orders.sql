@@ -9,10 +9,10 @@ source as (
 renamed as (
 
     select
-        id,
-        user_id,
-        order_date,
-        status,
+        id as order_id,
+        user_id as customer_id,
+        order_date as order_at,
+        status as order_status,
         _etl_loaded_at
 
     from source
